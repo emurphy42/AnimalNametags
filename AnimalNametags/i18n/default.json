@@ -1,0 +1,12 @@
+{
+  "Options_ToggleKey_Name": "Toggle Key",
+  "Options_ToggleKey_Tooltip": "The key used to toggle nametags",
+  "Options_TextColor_Name": "Text Color",
+  "Options_TextColor_Tooltip": "The hexadecimal color of the foreground text",
+  "Options_BackgroundColor_Name": "Background Color",
+  "Options_BackgroundColor_Tooltip": "The hexadecimal color of the background box",
+  "Options_BackgroundOpacity_Name": "Background Opacity",
+  "Options_BackgroundOpacity_Tooltip": "The level of 'see-through' for the background box",
+  "Options_AlsoApplyOpacityToText_Name": "Opacity on Text",
+  "Options_AlsoApplyOpacityToText_Tooltip": "Whether or not to apply the background opacity to the text"
+}

@@ -1,0 +1,10 @@
+{
+  "Name": "Animal Nametags",
+  "Author": "John Peters (you know, the farmer?)",
+  "Version": "1.0.0",
+  "Description": "Add nametags above animals.",
+  "UniqueID": "JohnPeters.AnimalNametags",
+  "EntryDll": "AnimalNametags.dll",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": [ "Nexus:30643" ]
+}

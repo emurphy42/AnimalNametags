@@ -1,0 +1,12 @@
+{
+  "Options_ToggleKey_Name": "切换热键",
+  "Options_ToggleKey_Tooltip": "用于切换名字标签的按键",
+  "Options_TextColor_Name": "文本颜色",
+  "Options_TextColor_Tooltip": "前景文本的十六进制颜色",
+  "Options_BackgroundColor_Name": "背景颜色",
+  "Options_BackgroundColor_Tooltip": "背景图框的十六进制颜色",
+  "Options_BackgroundOpacity_Name": "背景不透明度",
+  "Options_BackgroundOpacity_Tooltip": "背景图框的'透明'程度",
+  "Options_AlsoApplyOpacityToText_Name": "文本不透明度",
+  "Options_AlsoApplyOpacityToText_Tooltip": "是否对文字应用背景不透明度"
+}

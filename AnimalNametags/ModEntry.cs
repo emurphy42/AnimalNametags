@@ -24,6 +24,7 @@ namespace AnimalNametags
             this.Config = this.Helper.ReadConfig<ModConfig>();
 
             Helper.Events.GameLoop.GameLaunched += (e, a) => OnGameLaunched(e, a);
+            Helper.Events.Input.ButtonsChanged += (e, a) => OnButtonsChanged(e, a);
 
             ObjectPatches.ModInstance = this;
             ObjectPatches.Config = this.Config;
@@ -59,7 +60,7 @@ namespace AnimalNametags
             );
 
             // add config options
-            configMenu.AddKeybind(
+            configMenu.AddKeybindList(
                 mod: this.ModManifest,
                 name: () => Helper.Translation.Get("Options_ToggleKey_Name"),
                 tooltip: () => Helper.Translation.Get("Options_ToggleKey_Tooltip"),
@@ -97,6 +98,17 @@ namespace AnimalNametags
                 getValue: () => Config.AlsoApplyOpacityToText,
                 setValue: value => Config.AlsoApplyOpacityToText = value
             );
+        }
+
+        /// <summary>Check for toggle key</summary>
+        private void OnButtonsChanged(object sender, ButtonsChangedEventArgs e)
+        {
+            if (Config.ToggleKey.JustPressed())
+            {
+                ObjectPatches.IsActive = !ObjectPatches.IsActive;
+                var IsActiveDescription = ObjectPatches.IsActive ? "displayed" : "hidden";
+                Monitor.Log($"[Animal Nametags] Animal nametags are now {IsActiveDescription}", LogLevel.Debug);
+            }
         }
     }
 }

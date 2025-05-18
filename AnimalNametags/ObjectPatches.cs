@@ -10,6 +10,7 @@ namespace AnimalNametags
         // initialized by ModEntry.cs
         public static ModEntry ModInstance;
         public static ModConfig Config;
+        public static bool IsActive = true;
 
         private static Color ConvertFromHex(string s)
         {
@@ -26,6 +27,11 @@ namespace AnimalNametags
 
         public static void Animal_draw_Postfix(SpriteBatch b, NPC __instance)
         {
+            if (!IsActive)
+            {
+                return;
+            }
+
             var heightOffset = (__instance.GetType() == typeof(FarmAnimal)) ? 32 : -16;
 
             var font = Game1.content.Load<SpriteFont>("Fonts\\SmallFont", LocalizedContentManager.CurrentLanguageCode);

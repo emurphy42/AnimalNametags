@@ -5,7 +5,7 @@ namespace AnimalNametags
 {
     class ModConfig
     {
-        public SButton ToggleKey = SButton.None;
+        public KeybindList ToggleKey = KeybindList.Parse("None");
         public string TextColor = "#FFFFFF";
         public string BackgroundColor = "#000000";
         public float BackgroundOpacity = 0.6f;

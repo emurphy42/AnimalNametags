@@ -1,7 +1,7 @@
 {
   "Name": "Animal Nametags",
   "Author": "John Peters (you know, the farmer?)",
-  "Version": "1.0.1",
+  "Version": "1.0.2",
   "Description": "Add nametags above animals.",
   "UniqueID": "JohnPeters.AnimalNametags",
   "EntryDll": "AnimalNametags.dll",
